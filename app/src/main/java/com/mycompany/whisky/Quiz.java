@@ -36,6 +36,7 @@ public class Quiz extends Activity {
         trescPytania.setEnabled(false);
 
         odliczanieCzasu();
+        //test
     }
 
     private void odliczanieCzasu(){
