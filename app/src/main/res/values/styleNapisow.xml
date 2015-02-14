@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="tytul">
+        <item name="android:textSize">50dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="przyciskiGlowne">
+        <item name="android:textSize">30dp</item>
+    </style>
+
+</resources>

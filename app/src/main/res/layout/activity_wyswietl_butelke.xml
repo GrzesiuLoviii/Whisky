@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.mycompany.whisky.WyswietlButelke"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="117dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/zdjecieNaLiscie"
+            android:src="@drawable/ic_launcher"
+            android:minHeight="120dp"
+            android:minWidth="120dp"
+            android:maxHeight="120dp"
+            android:maxWidth="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Jack Daniels No. 7"
+            android:id="@+id/nazwa_butelki"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/zdjecieNaLiscie"
+            android:layout_toEndOf="@+id/zdjecieNaLiscie"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/podajWiek"
+            android:layout_alignTop="@+id/wiek"
+            android:layout_toRightOf="@+id/wiek"
+            android:layout_toEndOf="@+id/wiek" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/wiek"
+            android:id="@+id/wiek"
+            android:layout_below="@+id/nazwa_butelki"
+            android:layout_alignLeft="@+id/nazwa_butelki"
+            android:layout_alignStart="@+id/nazwa_butelki" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="204dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_weight="1.10">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/doStrony"
+            android:id="@+id/przyciskDoStrony" />
+
+        <ScrollView
+            android:layout_width="338dp"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+            android:layout_below="@+id/opisButelki"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:fillViewport="false">
+
+            <TextView
+                android:id="@+id/opisButelki"
+                android:text="@string/hello_world"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nazwa_butelki"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_centerHorizontal="true"
+                android:inputType="textMultiLine">
+            </TextView>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="153dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/mojaOcena"
+            android:id="@+id/mojaOcena" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/przyciskOcen"
+            android:id="@+id/przyciskOcen"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+</LinearLayout>

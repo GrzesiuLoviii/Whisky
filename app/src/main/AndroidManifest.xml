@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mycompany.whisky" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/tytulAplikacji"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".OknoGlowne"
+            android:label="@string/tytulAplikacji" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WszystkieMarki"
+            android:label="@string/tytulOkna_wszystkie_marki" >
+        </activity>
+        <activity
+            android:name=".SzukajButelki"
+            android:label="@string/tytulOkna_szukaj_butelki" >
+        </activity>
+        <activity android:name=".ListaKrajow" />
+        <activity android:name=".ListaRegionow" />
+        <activity android:name=".ListaWszystkie" />
+        <activity
+            android:name=".WyswietlButelkiDlaRegionu"
+            android:label="@string/tytulOkna_wyswietl_butelki_dla_regionu" >
+        </activity>
+        <activity
+            android:name=".WyswietlButelke"
+            android:label="@string/tytulOkna_wyswietl_butelke"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".WyswietlButelkiDlaKraju"
+            android:label="@string/tytulOkna_wyswietl_butelki_dla_kraju" >
+        </activity>
+        <activity
+            android:name=".OcenioneButelki"
+            android:label="@string/tytulOkna_ocenione_butelki" >
+        </activity>
+        <activity
+            android:name=".Quiz"
+            android:label="@string/title_activity_quiz" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,90 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="horizontal"
+    tools:context="com.mycompany.whisky.SzukajButelki">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="245dp"
+        android:layout_height="match_parent">
+
+        <AutoCompleteTextView
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/podajNazweSzukanejButelki"
+            android:id="@+id/wprowadzanieNazwyButelkiZPodpowiedzia"
+            android:ems="10">
+            <requestFocus/>
+        </AutoCompleteTextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/wybierzWiek"
+            android:id="@+id/text_wiek"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:layout_width="200dp"
+            android:layout_height="36dp"
+            android:id="@+id/spinnerWiek"
+            android:entries="@array/wybranyWiek"
+            android:prompt="@string/wybierzWiek"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/spinnerKraj"
+            android:layout_alignStart="@+id/spinnerKraj"
+            android:minHeight="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/wybierzKraj"
+            android:id="@+id/text_kraj"
+            android:layout_below="@+id/spinnerWiek"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="14dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/spinnerKraj"
+            android:entries="@array/wybranyKraj"
+            android:prompt="@string/wybierzKraj"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:minHeight="50dp"
+            android:layout_below="@+id/spinnerWiek" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/szukajButelki"
+            android:id="@+id/przyciskSzukaj"
+            android:layout_marginLeft="30dp"
+            android:onClick="wyswietlListeWyszukanychButelek"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listaWyszukanychButelek" />
+    </RelativeLayout>
+
+</LinearLayout>

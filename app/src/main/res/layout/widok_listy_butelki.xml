@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/zdjecieNaLiscie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxHeight="120dp"
+        android:maxWidth="120dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:minHeight="120dp"
+        android:minWidth="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/nazwaButelki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make Shown Here"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/zdjecieNaLiscie"
+        android:layout_toEndOf="@+id/zdjecieNaLiscie" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="2007"
+        android:id="@+id/wiekButelki"
+        android:layout_below="@+id/nazwaButelki"
+        android:layout_alignLeft="@+id/nazwaButelki"
+        android:layout_alignStart="@+id/nazwaButelki"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Region"
+        android:id="@+id/miejsceButelki"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_alignBaseline="@+id/wiekButelki"
+        android:layout_alignBottom="@+id/wiekButelki"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

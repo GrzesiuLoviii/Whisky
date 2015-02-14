@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:orientation="horizontal"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.mycompany.whisky.WyswietlButelke"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="332dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/zdjecieNaLiscie"
+            android:src="@drawable/ic_launcher"
+            android:minHeight="80dp"
+            android:minWidth="80dp"
+            android:maxHeight="80dp"
+            android:maxWidth="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/mojaOcena"
+            android:layout_alignEnd="@+id/mojaOcena" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Jack Daniels No. 7"
+            android:id="@+id/nazwa_butelki"
+            android:layout_below="@+id/zdjecieNaLiscie"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/wiek"
+            android:id="@+id/wiek"
+            android:layout_below="@+id/nazwa_butelki"
+            android:layout_alignLeft="@+id/nazwa_butelki"
+            android:layout_alignStart="@+id/nazwa_butelki" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/podajWiek"
+            android:layout_alignTop="@+id/wiek"
+            android:layout_toRightOf="@+id/wiek"
+            android:layout_toEndOf="@+id/wiek" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/doStrony"
+            android:id="@+id/przyciskDoStrony"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@+id/wiek"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/mojaOcena"
+            android:id="@+id/mojaOcena"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/przyciskDoStrony"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            android:layout_below="@+id/mojaOcena"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/przyciskOcen"
+            android:id="@+id/przyciskOcen"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/ratingBar"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ScrollView
+            android:layout_width="338dp"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+            android:layout_below="@+id/opisButelki"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/opisButelki"
+                android:text="@string/hello_world"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nazwa_butelki"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_centerHorizontal="true"
+                android:inputType="textMultiLine">
+            </TextView>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

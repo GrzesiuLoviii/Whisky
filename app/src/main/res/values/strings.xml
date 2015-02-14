@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Tytuł aplikacji -->
+    <string name="tytulAplikacji">Świat whisky</string>
+    <string name="tytul">Świat whisky</string>
+
+    <!-- Nazwy dla głównego okna aplikacji (OknoGlowne) -->
+    <string name="wszystkieMarki">Wszystkie marki</string>
+    <string name="szukaj">Wyszukaj butelkę</string>
+    <string name="ocenione">Ocenione</string>
+    <string name="quiz">Quiz</string>
+
+    <!-- Nazwy dla okna wszystkich butelek (WszystkieMarki) -->
+    <string name="tytulOkna_wszystkie_marki">Wszystkie marki</string>
+    <string name="listaKrajow_tytul">Kraj</string>
+    <string name="listaRegionow_tytul">Region</string>
+    <string name="listaWszystkie_tytul">Wszystkie</string>
+
+    <!-- Nazwy dla okna wyswietlenia butelki (WyswietlButelke) -->
+    <string name="wiek">Wiek:</string>
+    <string name="doStrony">Idź do strony</string>
+    <string name="mojaOcena">Moja ocena:</string>
+    <string name="przyciskOcen">Oceń</string>
+
+    <!-- Tytuły dla okien -->
+    <string name="tytulOkna_szukaj_butelki">Szukaj butelki</string>
+    <string name="tytulOkna_lista_krajow">Podział na kraje</string>
+    <string name="tytulOkna_lista_regionow">Podział na region</string>
+    <string name="tytulOkna_lista_wszystkie">Wszystkie butelki</string>
+    <string name="tytulOkna_wyswietl_butelki_dla_regionu">Wyswietl region</string>
+    <string name="tytulOkna_wyswietl_butelke">Wyswietl butelke</string>
+    <string name="tytulOkna_wyswietl_butelki_dla_kraju">Wyswietl kraj</string>
+    <string name="tytulOkna_ocenione_butelki">Ocenione butelki</string>
+
+    <!-- Nazwy dla okna szukania butelki (SzukajButelki) -->
+    <string name="podajNazweSzukanejButelki">Podaj nazwe</string>
+
+    <string-array name="listaPodpowiedziNazwButelek">
+        <item>Jack Daniel\'s No. 7</item>
+        <item>The Speyside</item>
+        <item>Glenmorangie: The Original</item>
+        <item>Bladnoch</item>
+        <item>Laphroaig</item>
+        <item>Bushmills Original</item>
+        <item>Yamazaki</item>
+        <item>Jim Beam White Label</item>
+        <item>Glen Breton</item>
+        <item>Embrujo</item>
+        <item>Bais\'s Cape Mountain</item>
+        <item>Amrut Fusion</item>
+    </string-array>
+
+    <string name="wybierzWiek">Wiek:</string>
+
+    <string-array name="wybranyWiek">
+        <item>Wszystkie</item>
+        <item>3-letnia</item>
+        <item>4-letnia</item>
+        <item>8-letnia</item>
+        <item>10-letnia</item>
+        <item>12-letnia</item>
+    </string-array>
+
+    <string name="wybierzKraj">Kraj:</string>
+
+    <string-array name="wybranyKraj">
+        <item>Wszystkie</item>
+        <item>Szkocja</item>
+        <item>Irlandia</item>
+        <item>Japonia</item>
+        <item>USA</item>
+        <item>Kanada</item>
+        <item>Europa</item>
+        <item>RPA</item>
+        <item>Indie i daleki wschód</item>
+        <item>Australia</item>
+    </string-array>
+
+    <string name="pytanie">Pytanie: </string>
+    <string name="numerPytania">1</string>
+
+    <string name="szukajButelki">Szukaj butelki</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">O autorze</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_quiz">Quiz</string>
+
+</resources>

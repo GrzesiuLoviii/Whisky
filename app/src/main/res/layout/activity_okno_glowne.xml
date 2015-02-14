@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="@drawable/tlo"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".OknoGlowne">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tytul"
+        style="@style/tytul"
+        android:id="@+id/tytul" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tytul"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="120dp">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wszystkieMarki"
+            android:id="@+id/przyciskWszystkieMarki"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/bialy"
+            style="@style/przyciskiGlowne"
+            android:onClick="otwarcieOknaWszystkichMarek"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/szukaj"
+            android:id="@+id/przyciskWyszukajButelke"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/bialy"
+            style="@style/przyciskiGlowne"
+            android:onClick="otwarcieOknaWyszukiwaniaButelki"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ocenione"
+            android:id="@+id/przyciskOcenione"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/bialy"
+            style="@style/przyciskiGlowne"
+            android:onClick="otwarcieOknaOcenionychButelek"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quiz"
+            android:id="@+id/przyciskQuiz"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/bialy"
+            style="@style/przyciskiGlowne"
+            android:onClick="otwarcieOknaQuizu"/>
+    </LinearLayout>
+
+</RelativeLayout>
